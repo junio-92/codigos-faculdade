@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aritimética</title>
+</head>
+<body>
+    <h1> Contas matemáticas</h1>
+    <input type="number" name="n1" id="n1">
+    <input type="number" name="n2" id="n2">
+    <input type="button"   value="Somar" onclick="somar()">
+
+    <div id="resposta">Resultado</div>
+
+    <style>
+
+        body{
+            font: normal 19pt verdana;
+
+        }
+        input{
+            font: normal 19pt verdana;
+            width: 100px;
+            color: navy;
+        }
+    </style>
+
+    <script>
+        function somar() {
+
+            var tn1 = window.document.getElementById('n1')
+            var tn2 = window.document.querySelector('input#n2')
+            var resposta =window.document.getElementById('resposta')
+            var jn1 = Number (tn1.value)
+            var jn2 = Number (tn2.value)
+
+            var op = jn1 + jn2
+            resposta.innerHTML =  ` O resultado foi <strong>${op}<strong>`
+        }
+
+        
+
+
+        /*  
+            CASO SEJA CALCULO DE UMA MÉDIA
+        
+        <script>
+        function somar() {
+
+            var tn1 = window.document.getElementById('n1')
+            var tn2 = window.document.querySelector('input#n2')
+            var resposta =window.document.getElementById('resposta')
+            var jn1 = Number (tn1.value)
+            var jn2 = Number (tn2.value)
+
+            var op = (jn1 + jn2)/2
+            resposta.innerHTML =  ` O resultado foi ${op}`
+        } */
+    </script>
+    </script>
+</body>
+</html>

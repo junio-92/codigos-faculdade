@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<style>
+    h1{
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color:	#8B4513;
+    }
+
+    div{
+        text-align: center;
+    }
+
+    body{
+        background-color: #FF00FF;
+        background-image: url("negro2.jpg");
+    }
+
+    p{
+        font-family: cursive;
+        color: 	yellow;
+    }
+    
+</style>
+
+
+
+<h1>Calculadora</h1>
+
+<div>
+<p>Primeiro numero</p><br>
+<input id= "j1" type="number"></html></br>
+<p>Segundo numero</p></br>
+<input id="j2" type="number"></br></br>
+
+<button onclick="soma()">Soma</button>
+<button onclick="menos()">Subtracão</button>
+<button onclick="vezes()">Multiplicação</button>
+<button onclick="dividido()">Divisão</button>
+<button onclick="quadrado()">Potencia</button><br><br>
+
+
+<p>Resultado da Operação: <span></span></p>
+</div>
+<script>
+    var j1 = document.querySelector('#j1')
+    var j2= document.querySelector('#j2')
+    var resultado = document.querySelector('span')
+
+    function soma(){
+        resultado.innerHTML = parseInt(j1.value) + parseInt(j2.value)
+
+      
+
+        
+    }
+
+
+    function menos(){
+        resultado.innerHTML = parseInt(j1.value) - parseInt(j2.value)
+
+      
+
+        
+    }
+
+    function vezes(){
+        resultado.innerHTML = parseInt(j1.value) * parseInt(j2.value)
+
+      
+
+        
+    }
+
+    function dividido(){
+        resultado.innerHTML = parseInt(j1.value) / parseInt(j2.value)
+
+      
+
+        
+    }
+
+    function quadrado(){
+        resultado.innerHTML = parseInt(j1.value) ** parseInt(j2.value)
+
+      
+
+        
+    }
+
+ 
+</script>
+</body>
+</html>

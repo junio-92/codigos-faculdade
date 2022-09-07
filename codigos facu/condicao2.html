@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado de Minas</title>
+</head>
+<body>
+    <h1>Você é de Minas Gerais ??</h1>
+
+    <input type="text" name="estado" id="estado">
+    <input type="button" value="conferir" onclick="calcular()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular() {
+            var estadobr = window.document.querySelector('input#estado')
+            var res = window.document.querySelector('div#res')
+            var state = Text(estadobr.value)
+            res.innerHTML = `<p> Você é do estado de ${state} </p>`
+            if(state != 'Minas'){
+                res.innerHTML =`<p> Você <strong>NÃO<strong> é do estado de Minas Gerais</p>`
+
+            }
+
+
+
+            
+        }
+
+
+    </script>
+</body>
+</html>

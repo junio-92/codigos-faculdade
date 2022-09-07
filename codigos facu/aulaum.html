@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas</title>
+</head>
+<style>
+div#estudo{
+    background: rgb(22,45,34);
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+</style>
+<body>
+
+    <div id="estudo">
+        wwwwwwww
+    </div>
+    <script>
+        var e = window.document.getElementById('estudo')
+
+        e.addEventListener('click', clicar)
+        e.addEventListener('mouseenter', entrou)
+        e.addEventListener('mouseout', saiu)
+
+        function clicar() {
+            
+            e.innerText = 'clicado'
+            e.style.background='blue'
+        }
+        function entrou() {
+            e.innerText = 'dentro'
+            
+        }
+        function saiu() {
+            e.innerText ='saindo'
+            e.style.background='pink'
+            
+        }
+
+        // onclick="clicar()" onmouseenter = "entrou ()" onmouseout = "saiu ()"//
+
+    </script>
+</body>
+</html>
