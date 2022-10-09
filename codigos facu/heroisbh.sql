@@ -7,3 +7,5 @@ idade tinyint,
 poder varchar(30),
 cidade varchar(30)
 );
+
+describe registroh;
