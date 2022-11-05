@@ -1,3 +1,3 @@
 # codigos-faculdade
 
-JUNIO DIAS DE OLIVEIRA - Academico web 
+JUNIO DIAS DE OLIVEIRA - Academico web Aluno
