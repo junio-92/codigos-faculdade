@@ -10,9 +10,20 @@ p{
     font-family: cursive;
 }
 
-ol{
-    background-color: azure;
+div.cabecalho ol{
+    
+    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: blue;
+   
 }
 
+
+
+div.rodape ol{
+    background-color: orangered;
+}
 
 /* comentarios / * 
